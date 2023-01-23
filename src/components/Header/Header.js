@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Styled } from "./HeaderStyles";
+import logo from "./img/logo1.png";
 
 const navItems = [
   { title: "Home", href: "/" },
@@ -34,7 +35,7 @@ const Header = () => {
   return (
     <Styled>
       <header>
-        <img src="" alt="" className="logo" />
+        <img src={logo} alt="" className="logo" />
         <nav>
           {navItems.map((item, index) => (
             <React.Fragment key={item.title}>
